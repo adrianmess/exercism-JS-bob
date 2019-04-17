@@ -2,5 +2,5 @@
 
 
 export const hey = (message) => {
-
+  if (message.includes("?")) {return "Sure."}
 };
