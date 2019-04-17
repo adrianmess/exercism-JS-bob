@@ -11,7 +11,7 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  test('shouting gibberish', () => {
+  xtest('shouting gibberish', () => {
     const result = hey('FCECDFCAAB');
     expect(result).toEqual('Whoa, chill out!');
   });
@@ -61,7 +61,7 @@ describe('Bob', () => {
     expect(result).toEqual('Sure.');
   });
 
-  xtest('shouting with special characters', () => {
+  test('shouting with special characters', () => {
     const result = hey('ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!');
     expect(result).toEqual('Whoa, chill out!');
   });
@@ -81,7 +81,7 @@ describe('Bob', () => {
     expect(result).toEqual('Sure.');
   });
 
-  xtest('prattling on', () => {
+  test('prattling on', () => {
     const result = hey('Wait! Hang on. Are you going to be OK?');
     expect(result).toEqual('Sure.');
   });
